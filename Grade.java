@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Grade
+{
+	public static void main(String[] args)
+	{
+		Scanner scr=new Scanner(System.in);
+		System.out.println("enter your total marks");
+		int n=scr.nextInt();
+		rank(n);
+	}
+
+	public static void rank(int a)
+	{
+		if(a>75)
+			System.out.println("A grdae");
+		else if ((a>60) && (a<70)) 
+			System.out.println("B grade");
+		else 
+			System.out.println("c grade");
+	}
+}
